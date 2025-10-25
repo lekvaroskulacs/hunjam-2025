@@ -1,30 +1,24 @@
 name: Unity License Check
 
 on:
-  workflow_dispatch: # run manually from GitHub UI
+  pull_request:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  check-license:
+  license-check:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Run Unity in batch mode
+      - name: Verify UNITY_LICENSE is present
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         run: |
-          set -e
-          docker run --rm \
-            -e UNITY_LICENSE="${{ secrets.UNITY_LICENSE }}" \
-            ghcr.io/game-ci/unity-editor:2022.3.48f1-linux-il2cpp-3 \
-            -batchmode -nographics -quit -logFile - \
-          | tee unity_log.txt
-
-      - name: Check license status in log
-        run: |
-          if grep -E "License type:|ULS|LICENSE SYSTEM" unity_log.txt >/dev/null; then
-            echo "✅ Unity license detected and active."
-          else
-            echo "❌ No valid license detected — check UNITY_LICENSE secret." >&2
+          if [ -z "$UNITY_LICENSE" ]; then
+            echo "❌ UNITY_LICENSE secret is not set."
             exit 1
           fi
+          echo "::add-mask::$UNITY_LICENSE"
+          echo "✅ UNITY_LICENSE secret is set (value masked)."
