@@ -35,7 +35,7 @@ public class Ketchup : MonoBehaviour
 
     IEnumerator SqueezeAnim()
     {
-        Vector3 originalScale = transform.localScale;
+        Vector3 originalScale = Vector3.one;
         Vector3 targetScale = new Vector3(originalScale.x, squeezeTargetScale, originalScale.z);
         float elapsedTime = 0f;
 
