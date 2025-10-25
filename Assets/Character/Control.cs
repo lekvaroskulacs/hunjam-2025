@@ -34,7 +34,7 @@ public class Control : MonoBehaviour
             Jump();
         }
 
-        rigidBody.velocity = new Vector2(velocity.x, rigidBody.velocity.y);
+        rigidBody.linearVelocity = new Vector2(velocity.x, rigidBody.linearVelocity.y);
     }
 
     private void Jump()
