@@ -21,6 +21,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Reclaim disk space on the runner before pulling the Unity Docker image
+      - name: Free disk space (Ubuntu)
+        uses: jlumbroso/free-disk-space@v1.3.1
+        with:
+          tool-cache: true
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: false   # keep Docker engine; we'll prune images next
+          swap-storage: true
+      - name: Prune Docker (images/volumes)
+        run: |
+          docker system prune -af || true
+          docker volume prune -f || true
+      - name: Show free space
+        run: df -h
+
       - name: Cache Library
         uses: actions/cache@v4
         with:
@@ -45,12 +63,12 @@ jobs:
           done
           echo "✅ Unity secrets present (masked)."
 
-      - name: Build WebGL
+      - name: Build WebGL (Unity 6 Build Profile)
         uses: game-ci/unity-builder@v4
         with:
           projectPath: .
           unityVersion: 6000.0.60f1
-          targetPlatform: WebGL
+          targetPlatform: WebGL            # kept for artifact path naming
           buildName: WebGLBuild
           buildProfile: "Assets/Settings/Build Profiles/WebBuild.asset"
         env:
