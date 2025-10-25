@@ -1,38 +1,81 @@
-name: Delete old workflow runs
+name: Maintenance - Delete old workflow runs
 
 on:
-  workflow_dispatch:   # manual trigger
-  schedule:
-    - cron: "0 0 * * 0"   # optional weekly cleanup
+  workflow_dispatch:
+    inputs:
+      workflow:
+        description: 'Workflow identifier: file path (.github/workflows/*.yml), numeric ID, or display name'
+        required: true
+        default: '.github/workflows/unity-webgl-ci.yml'
+      keep:
+        description: 'How many most-recent runs to keep'
+        required: true
+        default: '10'
 
 permissions:
   actions: write
   contents: read
 
 jobs:
-  cleanup:
+  delete-old-runs:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete old runs (keep last 5)
+      - name: Delete old runs (keep latest N)
         uses: actions/github-script@v7
         with:
           script: |
             const owner = context.repo.owner;
-            const repo = context.repo.repo;
-            const workflow = "Unity WebGL CI"; // workflow name or filename
-            const runs = await github.rest.actions.listWorkflowRuns({
-              owner,
-              repo,
-              workflow_id: workflow,
-              per_page: 100
-            });
-            const oldRuns = runs.data.workflow_runs.slice(5); // keep latest 5
-            for (const run of oldRuns) {
-              console.log(`🗑️ Deleting run #${run.id} (${run.name})`);
-              await github.rest.actions.deleteWorkflowRun({
-                owner,
-                repo,
-                run_id: run.id
+            const repo  = context.repo.repo;
+
+            const keep = Math.max(parseInt(core.getInput('keep', { required: true }), 10) || 10, 0);
+            const wfInput = core.getInput('workflow', { required: true }).trim();
+
+            // Resolve workflow_id:
+            // - If ends with .yml/.yaml -> treat as file path
+            // - Else if numeric -> use as ID
+            // - Else -> search by display name
+            let workflow_id = wfInput;
+
+            const endsWithYaml = wfInput.endsWith('.yml') || wfInput.endsWith('.yaml');
+            const numericId = /^\d+$/.test(wfInput);
+
+            if (!endsWithYaml && !numericId) {
+              core.info(`Looking up workflow by display name: "${wfInput}"`);
+              const all = await github.paginate(github.rest.actions.listRepoWorkflows, {
+                owner, repo, per_page: 100
               });
+              const found = all.find(w => w.name === wfInput);
+              if (!found) {
+                core.setFailed(`Could not find a workflow with display name "${wfInput}". Use the workflow file path (e.g. ".github/workflows/unity-webgl-ci.yml") or numeric ID.`);
+                return;
+              }
+              workflow_id = found.id; // numeric
+              core.info(`Resolved display name to workflow ID: ${workflow_id}`);
+            } else if (endsWithYaml) {
+              core.info(`Using workflow file: ${workflow_id}`);
+            } else if (numericId) {
+              core.info(`Using numeric workflow ID: ${workflow_id}`);
             }
-            console.log(`✅ Deleted ${oldRuns.length} old runs.`);
+
+            // List all runs (newest first), keep N, delete the rest
+            let page = 1;
+            let deleted = 0;
+            let total = 0;
+
+            // Gather all runs first (so "keep" applies globally, not per page)
+            const allRuns = await github.paginate(
+              github.rest.actions.listWorkflowRuns,
+              { owner, repo, workflow_id, per_page: 100 }
+            );
+
+            total = allRuns.length;
+            core.info(`Found ${total} runs for workflow ${workflow_id}. Keeping ${keep}, candidates for deletion: ${Math.max(total - keep, 0)}.`);
+
+            const toDelete = allRuns.slice(keep); // skip newest "keep" runs
+            for (const run of toDelete) {
+              core.info(`🗑️ Deleting run ${run.id} (${run.name}) created at ${run.created_at}`);
+              await github.rest.actions.deleteWorkflowRun({ owner, repo, run_id: run.id });
+              deleted++;
+            }
+
+            core.info(`✅ Done. Deleted ${deleted} runs, kept ${Math.min(keep, total)} most recent.`);
