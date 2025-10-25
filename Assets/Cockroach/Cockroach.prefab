@@ -241,6 +241,8 @@ MonoBehaviour:
   start: {fileID: 7400926363238196380}
   end: {fileID: 6823061234865732421}
   speed: 2
+  turnDuration: 0.2
+  targetHeightForDeath: 4
 --- !u!4 &8742669426565525002 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 805779268707797989, guid: c68b4f431ab31354ebef541b102a1cc9, type: 3}
