@@ -52,6 +52,7 @@ jobs:
           unityVersion: 6000.0.60f1
           targetPlatform: WebGL
           buildName: WebGLBuild
+          buildProfile: "Assets/Settings/Build Profiles/WebBuild.asset"
         env:
           UNITY_EMAIL:    ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
