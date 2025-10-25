@@ -16,7 +16,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         FindClosestInteractable();
         
-        if (_currentInteractable != null && Input.GetKeyDown(KeyCode.Space))
+        if (_currentInteractable != null && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.E)))
         {
             _currentInteractable.Interact();
 
@@ -25,10 +25,8 @@ public class PlayerInteraction : MonoBehaviour
                 _carriedObject = _currentInteractable;
             }
         }
-        else if (_carriedObject != null && Input.GetKeyDown(KeyCode.Space))
+        else if (_carriedObject != null && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.E)))
         {
-            Debug.Log("Droppppp");
-
             _carriedObject.Drop();
 
             _carriedObject = null;

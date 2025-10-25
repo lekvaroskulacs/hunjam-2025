@@ -27,7 +27,7 @@ public class MicrowaveStartButton : InteractableBase
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
         if (sprite != null)
         {
-            sprite.color = Color.white;
+            sprite.color = Color.black;
         }
     }
 }
