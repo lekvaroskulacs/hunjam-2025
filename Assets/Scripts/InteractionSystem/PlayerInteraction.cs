@@ -10,14 +10,28 @@ public class PlayerInteraction : MonoBehaviour
 
     private InteractableBase _currentInteractable;
 
+    private InteractableBase _carriedObject;
+
     void Update()
     {
         FindClosestInteractable();
-
         
         if (_currentInteractable != null && Input.GetKeyDown(KeyCode.Space))
         {
             _currentInteractable.Interact();
+
+            if (_currentInteractable.IsPickupable)
+            {
+                _carriedObject = _currentInteractable;
+            }
+        }
+        else if (_carriedObject != null && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Droppppp");
+
+            _carriedObject.Drop();
+
+            _carriedObject = null;
         }
     }
 
