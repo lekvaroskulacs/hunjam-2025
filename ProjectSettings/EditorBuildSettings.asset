@@ -6,12 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level.unity
-    guid: 62cc1a3c7832d084fbdc95d46b6cc9f2
-  - enabled: 1
+    path: Assets/Scenes/Level_1.unity
+    guid: 5c2d5bdf176afbd419c92c68a956e604
+  - enabled: 0
     path: Assets/Scenes/KalmansScene.unity
     guid: b5ffaa46a21a4e54c98562281fb2db0d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CharacterController.unity
     guid: 04e50a504e850434586d2815aa54213c
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

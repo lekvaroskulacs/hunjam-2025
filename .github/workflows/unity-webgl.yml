@@ -18,15 +18,18 @@ jobs:
   build-webgl:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (with LFS)
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Cache Library
         uses: actions/cache@v4
         with:
           path: ./Library
-          key: Library-WebGL-${{ hashFiles('Packages/manifest.json') }}
+          key: Library-WebGL-${{ runner.os }}-6000.0.60f1-${{ hashFiles('Packages/manifest.json', 'Packages/packages-lock.json') }}
           restore-keys: |
+            Library-WebGL-${{ runner.os }}-6000.0.60f1-
             Library-WebGL-
 
       # Verify required secrets are present
@@ -45,25 +48,39 @@ jobs:
           done
           echo "✅ Unity secrets present (masked)."
 
-      - name: Build WebGL
+      - name: Build WebGL (explicit build method)
         uses: game-ci/unity-builder@v4
-        with:
-          projectPath: .
-          unityVersion: 2022.3.10f1
-          targetPlatform: WebGL
-          buildName: WebGLBuild
         env:
           UNITY_EMAIL:    ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
           UNITY_LICENSE:  ${{ secrets.UNITY_LICENSE }}
+          # Optional hardening to reduce noisy UPM/Accelerator messages:
+          UNITY_ACCELERATOR_ENDPOINT: ""
+          UPM_DISABLE_DEPENDENCY_RESOLVER_SATISFIABILITY: true
+        with:
+          projectPath: .
+          unityVersion: 6000.0.60f1
+          targetPlatform: WebGL
+          buildMethod: UnityBuilderAction.Builder.BuildProject
+          customParameters: >
+            -buildName WebGLBuild
+            -buildPath build/WebGL
 
-      - name: Upload build artifact
+      - name: Upload artifact (for debugging/download)
         uses: actions/upload-artifact@v4
         with:
           name: WebGLBuild
           path: build/WebGL
 
+      # ---- GitHub Pages deploy ----
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: build/WebGL
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
