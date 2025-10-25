@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level.unity
+    path: Assets/Scenes/Level_1.unity	
     guid: 62cc1a3c7832d084fbdc95d46b6cc9f2
   - enabled: 1
     path: Assets/Scenes/KalmansScene.unity
