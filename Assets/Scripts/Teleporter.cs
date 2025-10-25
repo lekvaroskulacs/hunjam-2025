@@ -32,7 +32,7 @@ public class Teleporter : MonoBehaviour
                 if (rb2d != null)
                 {
                     rb2d.position = (Vector2)target.transform.position;
-                    rb2d.velocity = Vector2.zero;
+                    rb2d.linearVelocity = Vector2.zero;
                 }
                 else
                 {
