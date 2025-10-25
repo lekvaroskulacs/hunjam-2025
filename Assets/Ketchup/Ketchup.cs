@@ -10,10 +10,12 @@ public class Ketchup : MonoBehaviour
     [SerializeField] private float squeezeTargetScale;
 
     private ParticleSystem particles;
+    private Vector3 scale;
 
     private void Awake()
     {
         particles = GetComponentInChildren<ParticleSystem>();
+        scale = transform.localScale;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -43,8 +45,8 @@ public class Ketchup : MonoBehaviour
 
     IEnumerator SqueezeAnim()
     {
-        Vector3 originalScale = Vector3.one;
-        Vector3 targetScale = new Vector3(originalScale.x, squeezeTargetScale, originalScale.z);
+        Vector3 originalScale = scale;
+        Vector3 targetScale = new Vector3(originalScale.x, scale.y / 2.0f, originalScale.z);
         float elapsedTime = 0f;
 
         while (elapsedTime < squeezeDuration)
