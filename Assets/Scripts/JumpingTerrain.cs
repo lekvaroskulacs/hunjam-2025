@@ -10,7 +10,7 @@ public class JumpingTerrain : MonoBehaviour
     public Collider2D terrainCollider;
 
     // Name of the character GameObject (adjust if different)
-    public string characterObjectName = "Character";
+    public string characterObjectName = "Sausage";
 
     private void Awake()
     {

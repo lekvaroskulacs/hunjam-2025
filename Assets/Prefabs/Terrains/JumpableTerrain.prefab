@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terrainCollider: {fileID: 0}
-  characterObjectName: Character
+  characterObjectName: Sausage
 --- !u!212 &2247648526382504853
 SpriteRenderer:
   m_ObjectHideFlags: 0

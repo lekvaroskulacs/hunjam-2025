@@ -5,13 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Teleporter : MonoBehaviour
 {
-    public string interactScene = "KalmansScene";
-    public string characterScene = "CharacterController";
+    public string characterObjectName = "Sausage";
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other == null) return;
-        if (other.gameObject.name == "Character")
+        if (other.gameObject.name == characterObjectName)
         {
             if (this.gameObject.name == "TestSceneChange2")
             {
