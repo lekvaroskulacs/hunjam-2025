@@ -49,7 +49,7 @@ jobs:
         uses: game-ci/unity-builder@v4
         with:
           projectPath: .
-          unityVersion: 2022.3.10f1
+          unityVersion: 6000.0.60f1
           targetPlatform: WebGL
           buildName: WebGLBuild
         env:
