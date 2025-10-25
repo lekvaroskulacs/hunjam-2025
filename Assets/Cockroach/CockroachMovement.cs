@@ -10,11 +10,14 @@ public class CockroachMovement : MonoBehaviour
     [SerializeField] float speed = 2f;
     [SerializeField] float turnDuration = 0.2f;
 
+    [SerializeField] float targetHeightForDeath = 0.5f;
+
 
     BoxCollider2D boxCollider;
     private Animator anim;
     private bool isTurning = false;
     private float facingDirection = 1f;
+    private bool dead = false;
 
     private void Awake()
     {
@@ -23,6 +26,8 @@ public class CockroachMovement : MonoBehaviour
     }
     private void Update()
     {
+        if (dead) return;
+
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, end.position, step);
         anim.SetFloat("Horizontal", speed);
@@ -64,6 +69,44 @@ public class CockroachMovement : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0f, targetRotationY, 0f);
         isTurning = false;
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        if (dead) return;
+        Debug.Log("Dead cockroach!");
+        dead = true;
+        anim.enabled = false;
+        StartCoroutine(TurnUpsideDown());
+    }
+
+    IEnumerator TurnUpsideDown()
+    {
+        isTurning = true;
+        float startRotationX = transform.rotation.eulerAngles.x;
+        float targetRotationX = 180f;
+        float targetHeight = transform.position.y + targetHeightForDeath * transform.lossyScale.y;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < turnDuration)
+        {
+            float newRotationX = Mathf.Lerp(startRotationX, targetRotationX, elapsedTime / turnDuration);
+
+            transform.rotation = Quaternion.Euler(newRotationX, 0f, 0f);
+
+            float newY = Mathf.Lerp(transform.position.y, targetHeight, elapsedTime / turnDuration);
+            transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
+        }
+
+        transform.rotation = Quaternion.Euler(targetRotationX, 0f, 0f);
+
+        isTurning = false;
+        boxCollider.enabled = false;
+
     }
 
 

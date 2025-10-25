@@ -12,6 +12,8 @@ public class Control : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Rigidbody2D rigidBody;
 
+    [SerializeField] private GameObject ketchupEffect;
+
     private Vector2 velocity;
 
     private Grounded groundedChecker;
@@ -19,6 +21,10 @@ public class Control : MonoBehaviour
 
     private float facingDirection = 1f;
     private bool isTurning = false;
+
+    public bool ketchuped = false;
+    public bool mustarded = false;
+    public bool bunned = false;
 
     private void Awake()
     {
@@ -80,6 +86,11 @@ public class Control : MonoBehaviour
         {
             HitByCockroach(collision.gameObject);
         }
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        ketchupEffect.SetActive(true);
     }
 
     void HitByCockroach(GameObject cockroach)
