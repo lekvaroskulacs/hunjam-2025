@@ -1,0 +1,66 @@
+name: Unity WebGL CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+permissions:
+  contents: read
+  pages: write      # for GitHub Pages deploy
+  id-token: write   # for GitHub Pages deploy
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-webgl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Cache Unity Library to speed up imports
+      - name: Cache Library
+        uses: actions/cache@v4
+        with:
+          path: ./Library
+          key: Library-WebGL-${{ hashFiles('Packages/manifest.json') }}
+          restore-keys: |
+            Library-WebGL-
+
+      - name: Build WebGL
+        uses: game-ci/unity-builder@v4
+        with:
+          projectPath: .
+          unityVersion: 2022.3.10f1
+          targetPlatform: WebGL
+          buildName: WebGLBuild
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+      # Keep a regular artifact for downloads (useful on PRs)
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WebGLBuild
+          path: build/WebGL
+
+      # Prepare artifact for GitHub Pages
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/WebGL
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build-webgl
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
