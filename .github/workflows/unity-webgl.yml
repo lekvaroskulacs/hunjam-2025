@@ -1,22 +1,37 @@
-name: Unity License Check
+name: Unity WebGL CI
 
 on:
-  pull_request:
   push:
     branches: [ main ]
-  workflow_dispatch:
+  pull_request:
 
 permissions:
   contents: read
+  pages: write      # for GitHub Pages deploy
+  id-token: write   # for GitHub Pages deploy
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  activate-license:
+  build-webgl:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      # Optional: fail fast if secret is missing
-      - name: Verify UNITY_LICENSE is present
+      # Cache Unity Library to speed up imports
+      - name: Cache Library
+        uses: actions/cache@v4
+        with:
+          path: ./Library
+          key: Library-WebGL-${{ hashFiles('Packages/manifest.json') }}
+          restore-keys: |
+            Library-WebGL-
+
+      # Optional: check that the secret is available
+      - name: Verify UNITY_LICENSE secret
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         run: |
@@ -25,12 +40,40 @@ jobs:
             exit 1
           fi
           echo "::add-mask::$UNITY_LICENSE"
+          echo "✅ UNITY_LICENSE secret is present (masked)."
 
-      # Activate Unity via GameCI
-      - name: Activate Unity
-        uses: game-ci/unity-activate@v4
+      # Build WebGL using the Unity license secret as an environment variable
+      - name: Build WebGL
+        uses: game-ci/unity-builder@v4
         with:
-          unityVersion: 2021.3.41f1            # <- set your exact version
-          activationMode: server               # default; fine to omit
+          projectPath: .
+          unityVersion: 2022.3.10f1
+          targetPlatform: WebGL
+          buildName: WebGLBuild
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+      # Upload build artifact for PRs / debugging
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WebGLBuild
+          path: build/WebGL
+
+      # Upload Pages artifact for deployment
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/WebGL
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build-webgl
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
