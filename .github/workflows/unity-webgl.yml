@@ -7,8 +7,8 @@ on:
 
 permissions:
   contents: read
-  pages: write      # for GitHub Pages deploy
-  id-token: write   # for GitHub Pages deploy
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
@@ -21,7 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Cache Unity Library to speed up imports
       - name: Cache Library
         uses: actions/cache@v4
         with:
@@ -30,7 +29,22 @@ jobs:
           restore-keys: |
             Library-WebGL-
 
-      # Build WebGL using the Unity license secret as an environment variable
+      # Verify required secrets are present
+      - name: Verify Unity secrets
+        env:
+          UNITY_EMAIL:    ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE:  ${{ secrets.UNITY_LICENSE }}
+        run: |
+          for var in UNITY_EMAIL UNITY_PASSWORD UNITY_LICENSE; do
+            if [ -z "${!var}" ]; then
+              echo "❌ Missing $var"
+              exit 1
+            fi
+            echo "::add-mask::${!var}"
+          done
+          echo "✅ Unity secrets present (masked)."
+
       - name: Build WebGL
         uses: game-ci/unity-builder@v4
         with:
@@ -39,16 +53,16 @@ jobs:
           targetPlatform: WebGL
           buildName: WebGLBuild
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL:    ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE:  ${{ secrets.UNITY_LICENSE }}
 
-      # Upload build artifact for PRs / debugging
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: WebGLBuild
           path: build/WebGL
 
-      # Upload Pages artifact for deployment
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
