@@ -1,28 +1,30 @@
-name: unity-license-check
+name: Unity License Check
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # run manually from GitHub UI
 
 jobs:
-  license-check:
+  check-license:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Pull repo (not strictly needed but harmless)
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Unity license smoke test
+      - name: Run Unity in batch mode
         run: |
-          set -euo pipefail
+          set -e
           docker run --rm \
             -e UNITY_LICENSE="${{ secrets.UNITY_LICENSE }}" \
             ghcr.io/game-ci/unity-editor:2022.3.48f1-linux-il2cpp-3 \
             -batchmode -nographics -quit -logFile - \
-          | tee editor.log
+          | tee unity_log.txt
 
-          # Look for typical license markers in the log
-          if grep -E "License type:|LICENSE SYSTEM|ULS" editor.log >/dev/null; then
-            echo "✅ Unity license appears to be active."
+      - name: Check license status in log
+        run: |
+          if grep -E "License type:|ULS|LICENSE SYSTEM" unity_log.txt >/dev/null; then
+            echo "✅ Unity license detected and active."
           else
-            echo "❌ Could not find license markers in Unity log." >&2
+            echo "❌ No valid license detected — check UNITY_LICENSE secret." >&2
             exit 1
           fi
