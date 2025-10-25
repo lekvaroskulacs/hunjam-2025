@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 3188187997609910482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.15, y: 0, z: 0}
+  m_LocalPosition: {x: -9.87, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 5459124445190033596}
   m_Layer: 0
   m_Name: Cockroach
-  m_TagString: Untagged
+  m_TagString: Cockroach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,7 +88,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.6, y: -2.99, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.59341, y: 0.59341, z: 0.59341}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7400926363238196380}
@@ -163,6 +163,10 @@ PrefabInstance:
     - target: {fileID: 2010481394223453062, guid: c68b4f431ab31354ebef541b102a1cc9, type: 3}
       propertyPath: m_Name
       value: Roach
+      objectReference: {fileID: 0}
+    - target: {fileID: 2010481394223453062, guid: c68b4f431ab31354ebef541b102a1cc9, type: 3}
+      propertyPath: m_TagString
+      value: Cockroach
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

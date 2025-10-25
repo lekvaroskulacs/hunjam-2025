@@ -11,6 +11,9 @@ public class Control : MonoBehaviour
 
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Rigidbody2D rigidBody;
+    [SerializeField] private RectTransform canvasTransform;
+    [SerializeField] private Animator canvasAnim;
+    [SerializeField] private ResultScreen resultScreen;
 
     [SerializeField] private GameObject ketchupEffect;
 
@@ -35,6 +38,7 @@ public class Control : MonoBehaviour
     private void Update()
     {
         HandleMovement();
+        canvasTransform.position = transform.position;
         if (groundedChecker.isGrounded)
         {
             anim.SetBool("Ground", true);
@@ -97,6 +101,7 @@ public class Control : MonoBehaviour
     {
         Debug.Log("I died!");
         anim.SetTrigger("Dead");
+        canvasAnim.SetTrigger("CloseAnim");
     }
 
     IEnumerator Turn()
@@ -117,5 +122,18 @@ public class Control : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0f, targetRotationY, 0f);
         isTurning = false;
+    }
+
+    public void GameFinished()
+    {
+        canvasAnim.SetTrigger("CloseAnim");
+        Invoke(nameof(Results), 2f);
+    }
+
+    public void Results()
+    {
+        resultScreen.gameObject.SetActive(true);
+        resultScreen.eating.Play();
+        resultScreen.CheckResult(ketchuped, mustarded, bunned);
     }
 }
