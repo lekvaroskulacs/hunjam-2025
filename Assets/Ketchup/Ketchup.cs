@@ -8,6 +8,13 @@ public class Ketchup : MonoBehaviour
     [SerializeField] private float splatImpulseThreshold;
     [SerializeField] private float squeezeDuration;
     [SerializeField] private float squeezeTargetScale;
+
+    private ParticleSystem particles;
+
+    private void Awake()
+    {
+        particles = GetComponentInChildren<ParticleSystem>();
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!collision.rigidbody)
@@ -30,6 +37,7 @@ public class Ketchup : MonoBehaviour
     {
         Debug.Log("Ketchup splat!");
         
+        particles.Play();
         StartCoroutine("SqueezeAnim");
     }
 
