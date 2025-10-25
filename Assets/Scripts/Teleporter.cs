@@ -12,7 +12,7 @@ public class Teleporter : MonoBehaviour
         if (other == null) return;
         if (other.gameObject.name == characterObjectName)
         {
-            if (this.gameObject.name == "TestSceneChange2")
+            if (this.gameObject.name == "TP_To_Fridge")
             {
                 teleport(other);
             }
