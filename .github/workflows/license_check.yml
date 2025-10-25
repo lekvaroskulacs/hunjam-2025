@@ -1,0 +1,28 @@
+name: unity-license-check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  license-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull repo (not strictly needed but harmless)
+        uses: actions/checkout@v4
+
+      - name: Unity license smoke test
+        run: |
+          set -euo pipefail
+          docker run --rm \
+            -e UNITY_LICENSE="${{ secrets.UNITY_LICENSE }}" \
+            ghcr.io/game-ci/unity-editor:2022.3.48f1-linux-il2cpp-3 \
+            -batchmode -nographics -quit -logFile - \
+          | tee editor.log
+
+          # Look for typical license markers in the log
+          if grep -E "License type:|LICENSE SYSTEM|ULS" editor.log >/dev/null; then
+            echo "✅ Unity license appears to be active."
+          else
+            echo "❌ Could not find license markers in Unity log." >&2
+            exit 1
+          fi
