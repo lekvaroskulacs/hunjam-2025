@@ -30,6 +30,7 @@ jobs:
           restore-keys: |
             Library-WebGL-
 
+      # Build WebGL using the Unity license secret as an environment variable
       - name: Build WebGL
         uses: game-ci/unity-builder@v4
         with:
@@ -40,14 +41,14 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
-      # Keep a regular artifact for downloads (useful on PRs)
+      # Upload build artifact for PRs / debugging
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: WebGLBuild
           path: build/WebGL
 
-      # Prepare artifact for GitHub Pages
+      # Upload Pages artifact for deployment
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
