@@ -16,7 +16,7 @@ public class JumpPad : MonoBehaviour
             if (rb != null)
             {
                 // Reset vertical velocity before applying force
-                rb.velocity = new Vector2(rb.velocity.x, 0f);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
 
                 // Apply upward force
                 rb.AddForce(Vector2.up * launchForce, ForceMode2D.Impulse);
