@@ -7,9 +7,17 @@ public class Control : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 7f;
 
-    [SerializeField] private Rigidbody2D rigidbody;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Rigidbody2D rigidBody;
 
     private Vector2 velocity;
+
+    private Grounded groundedChecker;
+
+    private void Awake()
+    {
+        groundedChecker = GetComponentInChildren<Grounded>();
+    }
 
     private void Update()
     {
@@ -26,11 +34,27 @@ public class Control : MonoBehaviour
             Jump();
         }
 
-        rigidbody.velocity = new Vector2(velocity.x, rigidbody.velocity.y);
+        rigidBody.velocity = new Vector2(velocity.x, rigidBody.velocity.y);
     }
 
     private void Jump()
     {
-        rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        if (!groundedChecker.isGrounded)
+            return;
+
+        rigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Cockroach"))
+        {
+            HitByCockroach(collision.gameObject);
+        }
+    }
+
+    void HitByCockroach(GameObject cockroach)
+    {
+        Debug.Log("I died!");
     }
 }
