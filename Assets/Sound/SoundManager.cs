@@ -7,6 +7,7 @@ public struct NamedSFX
 {
     public string name;
     public AudioClip clip;
+    [Range(0f, 1f)] public float volume;
 }
 
 public class SoundManager : MonoBehaviour
@@ -21,13 +22,14 @@ public class SoundManager : MonoBehaviour
     [Range(0f, 1f)] public float musicVolume = 0.7f;
 
     [Header("SFX")]
-    [Tooltip("Single AudioSource used for playing one-shot SFX. PlayOneShot supports overlapping clips.")]
-    public float sfxVolume = 1f;
+    [Tooltip("Master SFX volume multiplier applied to all played SFX.")]
+    [Range(0f, 1f)] public float sfxVolume = 1f;
     public NamedSFX[] sfxCatalog;
 
     private AudioSource musicSource;
     private AudioSource sfxSource;
-    private Dictionary<string, AudioClip> sfxLookup;
+    // store NamedSFX so we have both clip and default volume per name
+    private Dictionary<string, NamedSFX> sfxLookup;
 
     private Coroutine musicCoroutine;
 
@@ -55,13 +57,13 @@ public class SoundManager : MonoBehaviour
         sfxSource.volume = sfxVolume;
 
         // Build lookup
-        sfxLookup = new Dictionary<string, AudioClip>();
+        sfxLookup = new Dictionary<string, NamedSFX>();
         if (sfxCatalog != null)
         {
             foreach (var entry in sfxCatalog)
             {
                 if (entry.clip == null || string.IsNullOrEmpty(entry.name)) continue;
-                if (!sfxLookup.ContainsKey(entry.name)) sfxLookup.Add(entry.name, entry.clip);
+                if (!sfxLookup.ContainsKey(entry.name)) sfxLookup.Add(entry.name, entry);
             }
         }
     }
@@ -149,18 +151,21 @@ public class SoundManager : MonoBehaviour
     public void PlaySFX(AudioClip clip, float volume = 1f)
     {
         if (clip == null) return;
-        sfxSource.PlayOneShot(clip, Mathf.Clamp01(volume));
+        // final volume multiplies master sfxVolume
+        float finalVol = Mathf.Clamp01(volume * sfxVolume);
+        sfxSource.PlayOneShot(clip, finalVol);
     }
 
     /// <summary>
-    /// Play a named SFX that exists in the sfxCatalog
+    /// Play a named SFX that exists in the sfxCatalog. The catalog's per-entry volume is used and multiplied by the master sfxVolume and optional runtime multiplier.
     /// </summary>
-    public void PlaySFX(string name, float volume = 1f)
+    public void PlaySFX(string name, float runtimeMultiplier = 1f)
     {
         if (string.IsNullOrEmpty(name)) return;
-        if (sfxLookup != null && sfxLookup.TryGetValue(name, out var clip))
+        if (sfxLookup != null && sfxLookup.TryGetValue(name, out var entry))
         {
-            PlaySFX(clip, volume);
+            float finalVol = Mathf.Clamp01(entry.volume * runtimeMultiplier * sfxVolume);
+            PlaySFX(entry.clip, finalVol);
         }
         else
         {
@@ -171,10 +176,11 @@ public class SoundManager : MonoBehaviour
     /// <summary>
     /// Add or replace a named SFX at runtime
     /// </summary>
-    public void RegisterSFX(string name, AudioClip clip)
+    public void RegisterSFX(string name, AudioClip clip, float volume = 1f)
     {
         if (string.IsNullOrEmpty(name) || clip == null) return;
-        if (sfxLookup == null) sfxLookup = new Dictionary<string, AudioClip>();
-        sfxLookup[name] = clip;
+        if (sfxLookup == null) sfxLookup = new Dictionary<string, NamedSFX>();
+        var entry = new NamedSFX { name = name, clip = clip, volume = Mathf.Clamp01(volume) };
+        sfxLookup[name] = entry;
     }
 }
