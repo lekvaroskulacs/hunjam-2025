@@ -1321,6 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100410a86409b874aa92f1c5abdaa76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsHoldingForkSpoon: 0
 --- !u!1 &411942901
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,6 +5196,10 @@ PrefabInstance:
     - target: {fileID: 7789397054221307316, guid: 033b6a3a38e02a74f82b1ffade2b1971, type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 7789397054221307316, guid: 033b6a3a38e02a74f82b1ffade2b1971, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
