@@ -24,7 +24,7 @@ public class MicrowaveHandle : InteractableBase
             Player.Instance.IsHoldingForkSpoon = false;
 
             WhiteMicroScreen.gameObject.SetActive(false);
-
+            base.DeSelect();
             _isPorpuseFulfilled = true;
         }
         // Show nned for Spoon
