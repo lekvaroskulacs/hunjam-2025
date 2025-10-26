@@ -56,12 +56,12 @@ MonoBehaviour:
   - name: Micro_button
     clip: {fileID: 8300000, guid: 578f7d2acab78af408f9b30d8bc365ea, type: 3}
     volume: 0.34
-  - name: cookware_clatter
-    clip: {fileID: 8300000, guid: c4333b8e130cd104e8643c6bffced1bb, type: 3}
+  - name: cockroach_die
+    clip: {fileID: 8300000, guid: 79a0516934f03434f87011267d67616b, type: 3}
     volume: 0.533
   - name: knife_chop
-    clip: {fileID: 8300000, guid: 8ba81ea6d147c0b4988d072457589c21, type: 3}
-    volume: 0.507
+    clip: {fileID: 8300000, guid: e74eeceb40becfd458958534ae27f926, type: 3}
+    volume: 1
   - name: result
     clip: {fileID: 8300000, guid: f949b1be96518c444b117fec67852953, type: 3}
     volume: 0.447
@@ -70,4 +70,13 @@ MonoBehaviour:
     volume: 0.533
   - name: died
     clip: {fileID: 8300000, guid: 5c29fc2bfc32bff47b821bc1486099b9, type: 3}
+    volume: 0.05
+  - name: player_movement
+    clip: {fileID: 8300000, guid: 79a0516934f03434f87011267d67616b, type: 3}
+    volume: 0.1
+  - name: player_movement
+    clip: {fileID: 8300000, guid: 79a0516934f03434f87011267d67616b, type: 3}
+    volume: 0.1
+  - name: player_movement
+    clip: {fileID: 8300000, guid: 79a0516934f03434f87011267d67616b, type: 3}
     volume: 0.1

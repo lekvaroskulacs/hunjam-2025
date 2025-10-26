@@ -78,6 +78,10 @@ public class CockroachMovement : MonoBehaviour
         if (dead) return;
         Debug.Log("Dead cockroach!");
         dead = true;
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlaySFX("cockroach_die");
+        }
         anim.enabled = false;
         StartCoroutine(TurnUpsideDown());
     }

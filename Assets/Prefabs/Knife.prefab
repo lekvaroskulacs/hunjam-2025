@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3216155609399712602}
   - component: {fileID: 6604388725873735232}
   - component: {fileID: 7992290357207853234}
+  - component: {fileID: 6849800802432851934}
   - component: {fileID: 2885515236665294718}
   m_Layer: 0
   m_Name: Knife
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.959999, y: -3.3999996, z: 0}
-  m_LocalScale: {x: 0.55452, y: 0.55452, z: 0.55452}
+  m_LocalScale: {x: 0.52255017, y: 0.52255017, z: 0.52255017}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,6 +100,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aab77d721875ba41a77acc95595a727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6849800802432851934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329112145107939592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9de3f4442d645d43bd333e31df71a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &2885515236665294718
