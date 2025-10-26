@@ -10,11 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6325465192161358828, guid: 10763b6dc58ad4547b20ee0779940065, type: 3}
       propertyPath: m_Name
-      value: Character Variant
+      value: NewCharacterCharacter Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6325465192161358828, guid: 10763b6dc58ad4547b20ee0779940065, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580062857522865722, guid: 10763b6dc58ad4547b20ee0779940065, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.347225
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580062857522865722, guid: 10763b6dc58ad4547b20ee0779940065, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.347225
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580062857522865722, guid: 10763b6dc58ad4547b20ee0779940065, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.347225
       objectReference: {fileID: 0}
     - target: {fileID: 6580062857522865722, guid: 10763b6dc58ad4547b20ee0779940065, type: 3}
       propertyPath: m_LocalPosition.x
