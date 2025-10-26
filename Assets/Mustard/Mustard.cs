@@ -14,7 +14,7 @@ public class Mustard : MonoBehaviour
 
     }
     
-    void Explode()
+    public void Explode()
     {
         Debug.Log("Mustard explosion effect triggered!");
         // Switch sprites to exlpoded version
