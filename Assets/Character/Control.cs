@@ -112,7 +112,7 @@ public class Control : MonoBehaviour
         Die();
     }
 
-    void Die()
+    public void Die()
     {
         anim.SetTrigger("Dead");
         canvasAnim.SetTrigger("CloseAnim");
