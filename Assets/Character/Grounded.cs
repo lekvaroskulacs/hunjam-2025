@@ -9,11 +9,19 @@ public class Grounded : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if (collision.gameObject.GetComponent<BoxCollider2D>() && collision.gameObject.GetComponent<BoxCollider2D>().isTrigger)
+        {
+            return;
+        }
         isGrounded = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.gameObject.GetComponent<BoxCollider2D>() &&collision.gameObject.GetComponent<BoxCollider2D>().isTrigger)
+        {
+            return;
+        }
         isGrounded = false;
     }
 }
