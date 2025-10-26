@@ -114,7 +114,7 @@ MonoBehaviour:
   _brokenMicro: {fileID: 0}
   _micro: {fileID: 0}
   flashCanvas: {fileID: 0}
-  flashDuration: 0.5
+  flashDuration: 0.3
 --- !u!82 &6610644726577650845
 AudioSource:
   m_ObjectHideFlags: 0
