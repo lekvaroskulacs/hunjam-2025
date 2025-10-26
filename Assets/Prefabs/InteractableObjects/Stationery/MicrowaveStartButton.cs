@@ -79,6 +79,7 @@ public class MicrowaveStartButton : InteractableBase
             StartCoroutine(FlashWhite());
         }
 
+        base.DeSelect();
         _isPorpuseFulfilled = true;
         Debug.Log("Boom! Microwave exploded due to fork inside!");
     }
