@@ -2,20 +2,10 @@ using UnityEngine;
 
 public class DrawerOpen : InteractableBase
 {
+    [SerializeField] Transform _posToTeleportPlayer;
+
     public override void Interact()
     {
-        
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Player.Instance.transform.position = _posToTeleportPlayer.position;
     }
 }

@@ -42,6 +42,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3534293736239084523}
   - component: {fileID: 5002466911674506254}
+  - component: {fileID: 8064934953842115793}
+  - component: {fileID: 7970333525671091558}
   m_Layer: 0
   m_Name: Sausage
   m_TagString: Player
@@ -92,6 +94,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8064934953842115793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821567815814206987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a36c02245790d7438b7c302b1c59e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionRadius: 2
+--- !u!114 &7970333525671091558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821567815814206987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100410a86409b874aa92f1c5abdaa76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1031335384777725004
 GameObject:
   m_ObjectHideFlags: 0
