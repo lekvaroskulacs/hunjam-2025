@@ -52,22 +52,22 @@ MonoBehaviour:
   sfxCatalog:
   - name: ketchup
     clip: {fileID: 8300000, guid: 25e43f9a7f0dca14ea851989f1288164, type: 3}
-    volume: 0
+    volume: 0.42
   - name: Micro_button
     clip: {fileID: 8300000, guid: 578f7d2acab78af408f9b30d8bc365ea, type: 3}
-    volume: 0
+    volume: 0.34
   - name: cookware_clatter
     clip: {fileID: 8300000, guid: c4333b8e130cd104e8643c6bffced1bb, type: 3}
-    volume: 0
+    volume: 0.533
   - name: knife_chop
     clip: {fileID: 8300000, guid: 8ba81ea6d147c0b4988d072457589c21, type: 3}
-    volume: 0
+    volume: 0.507
   - name: result
     clip: {fileID: 8300000, guid: f949b1be96518c444b117fec67852953, type: 3}
-    volume: 0
+    volume: 0.447
   - name: utensils
     clip: {fileID: 8300000, guid: 66afc38e8cd79e3449b8a1ae95a814ba, type: 3}
-    volume: 0
+    volume: 0.533
   - name: died
     clip: {fileID: 8300000, guid: 5c29fc2bfc32bff47b821bc1486099b9, type: 3}
     volume: 0.1

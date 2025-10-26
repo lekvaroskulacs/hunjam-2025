@@ -38,7 +38,16 @@ public class Ketchup : MonoBehaviour
     private void Splat()
     {
         Debug.Log("Ketchup splat!");
-        
+        if (SoundManager.Instance != null)
+        {
+            Debug.Log("Playing 'ketchup' SFX.");
+            SoundManager.Instance.PlaySFX("ketchup");
+        }
+        else
+        {
+            Debug.LogWarning("SoundManager.Instance is null. Cannot play 'ketchup' SFX.");
+        }
+
         particles.Play();
         StartCoroutine("SqueezeAnim");
     }
