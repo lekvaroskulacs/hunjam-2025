@@ -8,16 +8,35 @@ public abstract class InteractableBase : MonoBehaviour
 
     private bool _isBeingCarried = false;
 
+    [SerializeField] private GameObject _promptBubble; 
+
     public abstract void Interact();
 
     public virtual void Select()
     {
-        Debug.Log("SSSSSSSSSSSSSSSSSSSSSSSSSSSSelect");
+        if (_promptBubble == null)
+        {
+            Debug.LogWarning("No prompt Bubble was assigned to Interactable");
+        }
+        else
+        {
+            _promptBubble.SetActive(true);
+        }
+
+        //Debug.Log("SSSSSSSSSSSSSSSSSSSSSSSSSSSSelect");
     }
 
     public virtual void DeSelect()
     {
-        Debug.Log("DEEEEEEEEEEESelect");
+        if (_promptBubble == null)
+        {
+            Debug.LogWarning("No prompt Bubble was assigned to Interactable");
+        }
+        else
+        {
+            _promptBubble.SetActive(false);
+        }
+        //Debug.Log("DEEEEEEEEEEESelect");
     }
 
     public virtual void PickUp()

@@ -1,0 +1,2210 @@
+fileFormatVersion: 2
+guid: 4b9e4a5017354644ba417ed4165a5c05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -324800972607669196
+    second: req-bubble_0
+  - first:
+      213: -7398050930778596181
+    second: req-bubble_1
+  - first:
+      213: 4495596851746140794
+    second: req-bubble_2
+  - first:
+      213: 2009019277702194194
+    second: req-bubble_3
+  - first:
+      213: -9212765074121371430
+    second: req-bubble_4
+  - first:
+      213: -2110405541235928010
+    second: req-bubble_5
+  - first:
+      213: 3744908396419285381
+    second: req-bubble_6
+  - first:
+      213: 2943603547588486574
+    second: req-bubble_7
+  - first:
+      213: 2969279621571246647
+    second: req-bubble_8
+  - first:
+      213: 2793390180282092180
+    second: req-bubble_9
+  - first:
+      213: -1948528193971113402
+    second: req-bubble_10
+  - first:
+      213: -4004493801779637507
+    second: req-bubble_11
+  - first:
+      213: 7492235054152101446
+    second: req-bubble_12
+  - first:
+      213: -7345172141523505882
+    second: req-bubble_13
+  - first:
+      213: 6354233668877985473
+    second: req-bubble_14
+  - first:
+      213: -8550643976730355992
+    second: req-bubble_15
+  - first:
+      213: 8133576719685070169
+    second: req-bubble_16
+  - first:
+      213: -1855703463511698440
+    second: req-bubble_17
+  - first:
+      213: -4353610842431774792
+    second: req-bubble_18
+  - first:
+      213: 1384858068044420045
+    second: req-bubble_19
+  - first:
+      213: 8777027464340697872
+    second: req-bubble_20
+  - first:
+      213: 8432180517103961023
+    second: req-bubble_21
+  - first:
+      213: -469007946482080012
+    second: req-bubble_22
+  - first:
+      213: 3966493401942435613
+    second: req-bubble_23
+  - first:
+      213: 6605882133363708857
+    second: req-bubble_24
+  - first:
+      213: -5873182814495372950
+    second: req-bubble_25
+  - first:
+      213: -3834781114462248072
+    second: req-bubble_26
+  - first:
+      213: -6070486477789713651
+    second: req-bubble_27
+  - first:
+      213: -8878807023879988507
+    second: req-bubble_28
+  - first:
+      213: -1183772160343812215
+    second: req-bubble_29
+  - first:
+      213: 2540535655760361082
+    second: req-bubble_30
+  - first:
+      213: -7221429558252695729
+    second: req-bubble_31
+  - first:
+      213: -6247694080716989827
+    second: req-bubble_32
+  - first:
+      213: 1657496083659880739
+    second: req-bubble_33
+  - first:
+      213: 7679761496451273338
+    second: req-bubble_34
+  - first:
+      213: -3028807225536520092
+    second: req-bubble_35
+  - first:
+      213: -7898378773189530611
+    second: req-bubble_36
+  - first:
+      213: -3012657739126568091
+    second: req-bubble_37
+  - first:
+      213: 5953008774145063701
+    second: req-bubble_38
+  - first:
+      213: -5362816151686795842
+    second: req-bubble_39
+  - first:
+      213: -7139920918500250310
+    second: req-bubble_40
+  - first:
+      213: -8210575005269158216
+    second: req-bubble_41
+  - first:
+      213: -5054510603990736936
+    second: req-bubble_42
+  - first:
+      213: -2918889293983992432
+    second: req-bubble_43
+  - first:
+      213: -1566479079985206188
+    second: req-bubble_44
+  - first:
+      213: 6922899931750754734
+    second: req-bubble_45
+  - first:
+      213: 4408111861341226040
+    second: req-bubble_46
+  - first:
+      213: 8915055861081631447
+    second: req-bubble_47
+  - first:
+      213: 5934707979103535109
+    second: req-bubble_48
+  - first:
+      213: 3728192622177435793
+    second: req-bubble_49
+  - first:
+      213: -966665258702102533
+    second: req-bubble_50
+  - first:
+      213: 307541834650906750
+    second: req-bubble_51
+  - first:
+      213: 2454138962377436177
+    second: req-bubble_52
+  - first:
+      213: 5952770421272785076
+    second: req-bubble_53
+  - first:
+      213: 1525738940371885885
+    second: req-bubble_54
+  - first:
+      213: -5265441852777863541
+    second: req-bubble_55
+  - first:
+      213: -2938424324575927562
+    second: req-bubble_56
+  - first:
+      213: -109023620559717091
+    second: req-bubble_57
+  - first:
+      213: 6627758813203150253
+    second: req-bubble_58
+  - first:
+      213: -6368282336212430861
+    second: req-bubble_59
+  - first:
+      213: 3331085598258327924
+    second: req-bubble_60
+  - first:
+      213: -7319106797941593792
+    second: req-bubble_61
+  - first:
+      213: -5075213534478686124
+    second: req-bubble_62
+  - first:
+      213: -3841673255630396972
+    second: req-bubble_63
+  - first:
+      213: -1891072525675706433
+    second: req-bubble_64
+  - first:
+      213: -8190883117000119569
+    second: req-bubble_65
+  - first:
+      213: -8065756476071141678
+    second: req-bubble_66
+  - first:
+      213: 6185803454524873621
+    second: req-bubble_67
+  - first:
+      213: 3452169607506871388
+    second: req-bubble_68
+  - first:
+      213: -5162121147268134310
+    second: req-bubble_69
+  - first:
+      213: 746879432703765874
+    second: req-bubble_70
+  - first:
+      213: -3713928287658094534
+    second: req-bubble_71
+  - first:
+      213: -1011163389723473744
+    second: req-bubble_72
+  - first:
+      213: -3345706042595781496
+    second: req-bubble_73
+  - first:
+      213: -8323944693864785861
+    second: req-bubble_74
+  - first:
+      213: -6325449901030185026
+    second: req-bubble_75
+  - first:
+      213: -7286717819228453029
+    second: req-bubble_76
+  - first:
+      213: 5170983187294618887
+    second: req-bubble_77
+  - first:
+      213: -7167862011056902830
+    second: req-bubble_78
+  - first:
+      213: 8076788189127536663
+    second: req-bubble_79
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: req-bubble_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 871
+        width: 151
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cb40d7c331e7bf0800000000000000
+      internalID: -324800972607669196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 920
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac91b000e7d45990800000000000000
+      internalID: -7398050930778596181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_2
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 920
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7271b99481936e30800000000000000
+      internalID: 4495596851746140794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 919
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214e95a836871eb10800000000000000
+      internalID: 2009019277702194194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_4
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 919
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0ded5f9fea52080800000000000000
+      internalID: -9212765074121371430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_5
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 918
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634dd96775556b2e0800000000000000
+      internalID: -2110405541235928010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 919
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58103fc585698f330800000000000000
+      internalID: 3744908396419285381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_7
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 919
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea56795a4d7c9d820800000000000000
+      internalID: 2943603547588486574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_8
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 920
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a7f8a7510053920800000000000000
+      internalID: 2969279621571246647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_9
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 871
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a47c6a19d14c620800000000000000
+      internalID: 2793390180282092180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_10
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 870
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642b48b6eef65f4e0800000000000000
+      internalID: -1948528193971113402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_11
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 868
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2dbaf9a1e2d68c0800000000000000
+      internalID: -4004493801779637507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_12
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 867
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e27701614c9f760800000000000000
+      internalID: 7492235054152101446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_13
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 866
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d656a8ad4b01a90800000000000000
+      internalID: -7345172141523505882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_14
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 866
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6ac4d0bd5ce2850800000000000000
+      internalID: 6354233668877985473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_15
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 867
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6572e3b92065980800000000000000
+      internalID: -8550643976730355992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_16
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 868
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d273adee440e070800000000000000
+      internalID: 8133576719685070169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_17
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 870
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f35ce828873f36e0800000000000000
+      internalID: -1855703463511698440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_18
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 872
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf9096510ed493c0800000000000000
+      internalID: -4353610842431774792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_19
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 824
+        width: 6
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc31f1a5311083310800000000000000
+      internalID: 1384858068044420045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 713
+        width: 115
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013ffd3e9f34ec970800000000000000
+      internalID: 8777027464340697872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_21
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 824
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb383f3318f150570800000000000000
+      internalID: 8432180517103961023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_22
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 823
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6a911f1cfbd79f0800000000000000
+      internalID: -469007946482080012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_23
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 820
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17a5b2dbb0db0730800000000000000
+      internalID: 3966493401942435613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_24
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 818
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b35e330dceccab50800000000000000
+      internalID: 6605882133363708857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_25
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 815
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69031109534e7ea0800000000000000
+      internalID: -5873182814495372950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_26
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 813
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873e919d4ee18cac0800000000000000
+      internalID: -3834781114462248072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_27
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 813
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b288516bc41cba0800000000000000
+      internalID: -6070486477789713651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_28
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 813
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ead360cd0428c480800000000000000
+      internalID: -8878807023879988507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_29
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 813
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987d5b7fd75629fe0800000000000000
+      internalID: -1183772160343812215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_30
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 815
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a767fc4f7bbc14320800000000000000
+      internalID: 2540535655760361082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_31
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 817
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f87d9d31458cb90800000000000000
+      internalID: -7221429558252695729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_32
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 820
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a9d85d55bbb49a0800000000000000
+      internalID: -6247694080716989827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_33
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 822
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329f52308eb900710800000000000000
+      internalID: 1657496083659880739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_34
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 776
+        width: 6
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7253b3546ef39a60800000000000000
+      internalID: 7679761496451273338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_35
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 52
+        width: 708
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46062cc20e387f5d0800000000000000
+      internalID: -3028807225536520092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_36
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 771
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c6d8a6a52536290800000000000000
+      internalID: -7898378773189530611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_37
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 774
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b878d7fb3e036d0800000000000000
+      internalID: -3012657739126568091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_38
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 719
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b33bf80f55d9250800000000000000
+      internalID: 5953008774145063701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_39
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 724
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd2bfa9f137395b0800000000000000
+      internalID: -5362816151686795842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_40
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 727
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d6968e0c7e9ec90800000000000000
+      internalID: -7139920918500250310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_41
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 668
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b61b31c88d2e0e80800000000000000
+      internalID: -8210575005269158216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_42
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 673
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dfdfa7b265cad9b0800000000000000
+      internalID: -5054510603990736936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_43
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 677
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095b46de6a50e77d0800000000000000
+      internalID: -2918889293983992432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_44
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 617
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ca669839fb24ae0800000000000000
+      internalID: -1566479079985206188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_45
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 622
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9649f0fc4131060800000000000000
+      internalID: 6922899931750754734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_46
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 627
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8340e69f162cc2d30800000000000000
+      internalID: 4408111861341226040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_47
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 567
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dae8885214a8bb70800000000000000
+      internalID: 8915055861081631447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_48
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 572
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500842ca6715c5250800000000000000
+      internalID: 5934707979103535109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_49
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 578
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1904e13ef633db330800000000000000
+      internalID: 3728192622177435793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_50
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 518
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff995e9117b592f0800000000000000
+      internalID: -966665258702102533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_51
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 524
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7070ff4bab944400800000000000000
+      internalID: 307541834650906750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_52
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 529
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ce3f9326ade0220800000000000000
+      internalID: 2454138962377436177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_53
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 534
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0ba65b82d7c9250800000000000000
+      internalID: 5952770421272785076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_54
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 470
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fd8d88b738c2510800000000000000
+      internalID: 1525738940371885885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_55
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8663bb48846de6b0800000000000000
+      internalID: -5265441852777863541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_56
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 481
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2e84e25ae9837d0800000000000000
+      internalID: -2938424324575927562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_57
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 486
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d3960489bac7ef0800000000000000
+      internalID: -109023620559717091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_58
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 423
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da530f576878afb50800000000000000
+      internalID: 6627758813203150253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_59
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 428
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ffc9a0b4f05f97a0800000000000000
+      internalID: -6368282336212430861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_60
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 434
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4717b98e3b46a3e20800000000000000
+      internalID: 3331085598258327924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_61
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 438
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0496b83452f4d6a90800000000000000
+      internalID: -7319106797941593792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_62
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 377
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458a4261e283199b0800000000000000
+      internalID: -5075213534478686124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_63
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 382
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1280f2782afaac0800000000000000
+      internalID: -3841673255630396972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_64
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb74996ae8f81c5e0800000000000000
+      internalID: -1891072525675706433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_65
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 391
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaa676c333245e80800000000000000
+      internalID: -8190883117000119569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_66
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 331
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de19fe183da01090800000000000000
+      internalID: -8065756476071141678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_67
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 336
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bd655d77368d550800000000000000
+      internalID: 6185803454524873621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_68
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 341
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54c8d7b7f198ef20800000000000000
+      internalID: 3452169607506871388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_69
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 344
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a0d89aa267c58b0800000000000000
+      internalID: -5162121147268134310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_70
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 286
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d6a5c03e27d5a00800000000000000
+      internalID: 746879432703765874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_71
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a305ddc46e9757cc0800000000000000
+      internalID: -3713928287658094534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_72
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 294
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b807a12140a7f1f0800000000000000
+      internalID: -1011163389723473744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_73
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 296
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8845330a41aa191d0800000000000000
+      internalID: -3345706042595781496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_74
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 242
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38113037686b7c80800000000000000
+      internalID: -8323944693864785861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_75
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 245
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7e09424dc7738a0800000000000000
+      internalID: -6325449901030185026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_76
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 248
+        width: 53
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57016600c060ea90800000000000000
+      internalID: -7286717819228453029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_77
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 197
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7058632dfc503c740800000000000000
+      internalID: 5170983187294618887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_78
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 199
+        width: 54
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dafe75a73a68c90800000000000000
+      internalID: -7167862011056902830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: req-bubble_79
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 152
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710740bb014861070800000000000000
+      internalID: 8076788189127536663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      req-bubble_0: -324800972607669196
+      req-bubble_1: -7398050930778596181
+      req-bubble_10: -1948528193971113402
+      req-bubble_11: -4004493801779637507
+      req-bubble_12: 7492235054152101446
+      req-bubble_13: -7345172141523505882
+      req-bubble_14: 6354233668877985473
+      req-bubble_15: -8550643976730355992
+      req-bubble_16: 8133576719685070169
+      req-bubble_17: -1855703463511698440
+      req-bubble_18: -4353610842431774792
+      req-bubble_19: 1384858068044420045
+      req-bubble_2: 4495596851746140794
+      req-bubble_20: 8777027464340697872
+      req-bubble_21: 8432180517103961023
+      req-bubble_22: -469007946482080012
+      req-bubble_23: 3966493401942435613
+      req-bubble_24: 6605882133363708857
+      req-bubble_25: -5873182814495372950
+      req-bubble_26: -3834781114462248072
+      req-bubble_27: -6070486477789713651
+      req-bubble_28: -8878807023879988507
+      req-bubble_29: -1183772160343812215
+      req-bubble_3: 2009019277702194194
+      req-bubble_30: 2540535655760361082
+      req-bubble_31: -7221429558252695729
+      req-bubble_32: -6247694080716989827
+      req-bubble_33: 1657496083659880739
+      req-bubble_34: 7679761496451273338
+      req-bubble_35: -3028807225536520092
+      req-bubble_36: -7898378773189530611
+      req-bubble_37: -3012657739126568091
+      req-bubble_38: 5953008774145063701
+      req-bubble_39: -5362816151686795842
+      req-bubble_4: -9212765074121371430
+      req-bubble_40: -7139920918500250310
+      req-bubble_41: -8210575005269158216
+      req-bubble_42: -5054510603990736936
+      req-bubble_43: -2918889293983992432
+      req-bubble_44: -1566479079985206188
+      req-bubble_45: 6922899931750754734
+      req-bubble_46: 4408111861341226040
+      req-bubble_47: 8915055861081631447
+      req-bubble_48: 5934707979103535109
+      req-bubble_49: 3728192622177435793
+      req-bubble_5: -2110405541235928010
+      req-bubble_50: -966665258702102533
+      req-bubble_51: 307541834650906750
+      req-bubble_52: 2454138962377436177
+      req-bubble_53: 5952770421272785076
+      req-bubble_54: 1525738940371885885
+      req-bubble_55: -5265441852777863541
+      req-bubble_56: -2938424324575927562
+      req-bubble_57: -109023620559717091
+      req-bubble_58: 6627758813203150253
+      req-bubble_59: -6368282336212430861
+      req-bubble_6: 3744908396419285381
+      req-bubble_60: 3331085598258327924
+      req-bubble_61: -7319106797941593792
+      req-bubble_62: -5075213534478686124
+      req-bubble_63: -3841673255630396972
+      req-bubble_64: -1891072525675706433
+      req-bubble_65: -8190883117000119569
+      req-bubble_66: -8065756476071141678
+      req-bubble_67: 6185803454524873621
+      req-bubble_68: 3452169607506871388
+      req-bubble_69: -5162121147268134310
+      req-bubble_7: 2943603547588486574
+      req-bubble_70: 746879432703765874
+      req-bubble_71: -3713928287658094534
+      req-bubble_72: -1011163389723473744
+      req-bubble_73: -3345706042595781496
+      req-bubble_74: -8323944693864785861
+      req-bubble_75: -6325449901030185026
+      req-bubble_76: -7286717819228453029
+      req-bubble_77: 5170983187294618887
+      req-bubble_78: -7167862011056902830
+      req-bubble_79: 8076788189127536663
+      req-bubble_8: 2969279621571246647
+      req-bubble_9: 2793390180282092180
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
