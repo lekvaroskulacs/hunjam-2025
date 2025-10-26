@@ -24,6 +24,7 @@ public class Control : MonoBehaviour
 
     private float facingDirection = 1f;
     private bool isTurning = false;
+    private bool isDead = false;
 
     public bool ketchuped = false;
     public bool mustarded = false;
@@ -35,8 +36,16 @@ public class Control : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        canvasAnim.SetTrigger("OpenAnim");
+    }
+    
+
     private void Update()
     {
+        if (isDead)
+            return;
         HandleMovement();
         canvasTransform.position = transform.position;
         if (groundedChecker.isGrounded)
@@ -100,8 +109,21 @@ public class Control : MonoBehaviour
     void HitByCockroach(GameObject cockroach)
     {
         Debug.Log("I died!");
+        Die();
+    }
+
+    void Die()
+    {
         anim.SetTrigger("Dead");
         canvasAnim.SetTrigger("CloseAnim");
+        isDead = true;
+        rigidBody.constraints = RigidbodyConstraints2D.FreezeAll;
+        Invoke(nameof(ReloadScene), 2f);
+    }
+
+    void ReloadScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
 
     IEnumerator Turn()
