@@ -610,6 +610,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1288509891}
     m_Modifications:
+    - target: {fileID: 596511277506457509, guid: d4af429b35a0cf34fb2b08c20f0ac222, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 596511277506457509, guid: d4af429b35a0cf34fb2b08c20f0ac222, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 647337892818522149, guid: d4af429b35a0cf34fb2b08c20f0ac222, type: 3}
       propertyPath: _micro
       value: 
