@@ -47,7 +47,7 @@ MonoBehaviour:
   musicClipA: {fileID: 8300000, guid: e38f1aa831760664baa4f9a2d6d9f03a, type: 3}
   musicClipB: {fileID: 8300000, guid: 793bb94472328364c947ea3588cfdccd, type: 3}
   playSequence: 1
-  musicVolume: 0.7
+  musicVolume: 0.5
   sfxVolume: 1
   sfxCatalog:
   - name: ketchup
@@ -71,12 +71,12 @@ MonoBehaviour:
   - name: died
     clip: {fileID: 8300000, guid: 5c29fc2bfc32bff47b821bc1486099b9, type: 3}
     volume: 0.05
-  - name: player_movement
+  - name: player_walk
+    clip: {fileID: 8300000, guid: 38282c97805d156f8833d3664fbbdf7a, type: 3}
+    volume: 0.1
+  - name: interact
     clip: {fileID: 8300000, guid: 79a0516934f03434f87011267d67616b, type: 3}
     volume: 0.1
-  - name: player_movement
-    clip: {fileID: 8300000, guid: 79a0516934f03434f87011267d67616b, type: 3}
-    volume: 0.1
-  - name: player_movement
+  - name: player_jump
     clip: {fileID: 8300000, guid: 79a0516934f03434f87011267d67616b, type: 3}
     volume: 0.1

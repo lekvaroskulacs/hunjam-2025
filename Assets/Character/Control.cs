@@ -75,6 +75,14 @@ public class Control : MonoBehaviour
         velocity.x = moveInput * moveSpeed;
         anim.SetFloat("Horizontal", Mathf.Abs(velocity.x));
 
+        //if(SoundManager.Instance != null)
+        //{
+        //    if (moveInput != 0 && groundedChecker.isGrounded)
+        //    {
+        //            SoundManager.Instance.PlaySFX("player_walk");
+        //    }
+        //}
+
         if (moveInput < 0 && !isTurning)
         {
             facingDirection = 1f;
@@ -99,10 +107,17 @@ public class Control : MonoBehaviour
         if (!groundedChecker.isGrounded)
             return;
 
+        Debug.Log("Player jumped.");
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlaySFX("player_jump");
+        }
+
         rigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         anim.SetBool("Ground", false);
         if (anim.GetBool("Carry"))
             return;
+
         anim.SetTrigger("Jumping");
     }
 
