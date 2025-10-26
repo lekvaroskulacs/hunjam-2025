@@ -99,11 +99,11 @@ GameObject:
   - component: {fileID: 5844988674319455957}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6580062857522865722
 Transform:
   m_ObjectHideFlags: 0
@@ -368,6 +368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sausage
       objectReference: {fileID: 0}
+    - target: {fileID: 821567815814206987, guid: eeb6a1ca4cc26794e8e214f635e4cdf4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3534293736239084523, guid: eeb6a1ca4cc26794e8e214f635e4cdf4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -382,11 +386,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3534293736239084523, guid: eeb6a1ca4cc26794e8e214f635e4cdf4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2
+      value: -6.91
       objectReference: {fileID: 0}
     - target: {fileID: 3534293736239084523, guid: eeb6a1ca4cc26794e8e214f635e4cdf4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.79
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 3534293736239084523, guid: eeb6a1ca4cc26794e8e214f635e4cdf4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -486,7 +490,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 5.89
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
