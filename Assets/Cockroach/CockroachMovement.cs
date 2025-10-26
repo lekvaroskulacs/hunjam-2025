@@ -9,6 +9,8 @@ public class CockroachMovement : MonoBehaviour
 
     [SerializeField] float speed = 2f;
     [SerializeField] float turnDuration = 0.2f;
+    [SerializeField] float disappearDuration = 1f;
+    [SerializeField] float disappearRate = 0.5f;
 
     [SerializeField] float targetHeightForDeath = 0.5f;
 
@@ -107,6 +109,18 @@ public class CockroachMovement : MonoBehaviour
         isTurning = false;
         boxCollider.enabled = false;
 
+        elapsedTime = 0f;
+        while (elapsedTime < disappearDuration)
+        {
+            foreach (var renderer in GetComponentsInChildren<SpriteRenderer>())
+            {
+                Debug.Log(renderer.material.color.a);
+                renderer.material.color = new Vector4(renderer.material.color.r, renderer.material.color.g, renderer.material.color.b, renderer.material.color.a - (1f / disappearDuration) * Time.deltaTime * disappearRate);
+                Debug.Log(renderer.material.color.a);
+            }
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
     }
 
 
