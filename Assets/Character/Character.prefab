@@ -457,8 +457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e924962167f210145a99f0e9107fd065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpForce: 28
+  moveSpeed: 8
+  jumpForce: 9
   turnDuration: 0.2
   groundLayer:
     serializedVersion: 2
@@ -466,6 +466,7 @@ MonoBehaviour:
   rigidBody: {fileID: 2156437466764549910}
   canvasTransform: {fileID: 2098270230058027827}
   canvasAnim: {fileID: 5837877974114856986}
+  resultScreen: {fileID: 0}
   ketchupEffect: {fileID: 3151435415369193347}
   ketchuped: 0
   mustarded: 0
