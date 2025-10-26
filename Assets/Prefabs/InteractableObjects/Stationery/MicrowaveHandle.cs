@@ -21,6 +21,7 @@ public class MicrowaveHandle : InteractableBase
 
             _forkSpoon.GetComponent<InteractableBase>().Drop();
             Destroy(_forkSpoon);
+            Player.Instance.IsHoldingForkSpoon = false;
 
             WhiteMicroScreen.gameObject.SetActive(false);
 

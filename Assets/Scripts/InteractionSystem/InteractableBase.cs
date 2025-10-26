@@ -78,7 +78,7 @@ public abstract class InteractableBase : MonoBehaviour
     {
         if (_isBeingCarried)
         {
-            transform.position = Player.Instance.transform.position;
+            transform.position = GameObject.FindWithTag("Arm").transform.position;
         }
     }
 }

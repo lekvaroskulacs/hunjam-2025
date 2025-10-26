@@ -59,6 +59,14 @@ public class Control : MonoBehaviour
         {
             anim.SetBool("Ground", false);
         }
+        if (Player.Instance.IsHoldingForkSpoon)
+        {
+            anim.SetBool("Carry", true);
+        }
+        else
+        {
+            anim.SetBool("Carry", false);
+        }
     }
 
     private void HandleMovement()
@@ -93,6 +101,8 @@ public class Control : MonoBehaviour
 
         rigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         anim.SetBool("Ground", false);
+        if (anim.GetBool("Carry"))
+            return;
         anim.SetTrigger("Jumping");
     }
 
