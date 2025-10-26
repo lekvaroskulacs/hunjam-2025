@@ -7,6 +7,7 @@ public class Fork : InteractableBase
     public override void Interact()
     {
         PickUp();
+        Player.Instance.IsHoldingForkSpoon = true;
     }
 
     public override void Select()

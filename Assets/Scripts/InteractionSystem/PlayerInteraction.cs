@@ -29,6 +29,8 @@ public class PlayerInteraction : MonoBehaviour
         {
             _carriedObject.Drop();
 
+            Player.Instance.IsHoldingForkSpoon = false;
+
             _carriedObject = null;
         }
     }
