@@ -10,6 +10,7 @@ public class MicrowaveStartButton : InteractableBase
     [SerializeField] private AudioSource microwaveDoneSound;
     [SerializeField] private AudioSource microwaveExplosionSound;
     [SerializeField] private Mustard mustard;
+    [SerializeField] public ParticleSystem hitParticles;
 
 
     [SerializeField] GameObject _brokenMicro;
@@ -80,6 +81,14 @@ public class MicrowaveStartButton : InteractableBase
         }
 
         base.DeSelect();
+        // play assigned particle system at collision point
+        if (hitParticles != null)
+        {
+            Debug.Log("Playing hit particles.");
+            // position particle system at the point closest to the knife
+            hitParticles.Play();
+        }
+
         _isPorpuseFulfilled = true;
         Debug.Log("Boom! Microwave exploded due to fork inside!");
     }
