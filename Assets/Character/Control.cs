@@ -16,6 +16,9 @@ public class Control : MonoBehaviour
     [SerializeField] private ResultScreen resultScreen;
 
     [SerializeField] private GameObject ketchupEffect;
+    [SerializeField] private GameObject mustardEffect;
+    [SerializeField] private GameObject bunFrontEffect;
+    [SerializeField] private GameObject bunBackEffect;
 
     private Vector2 velocity;
 
@@ -104,6 +107,7 @@ public class Control : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         ketchupEffect.SetActive(true);
+        ketchuped = true;
     }
 
     void HitByCockroach(GameObject cockroach)
@@ -157,5 +161,17 @@ public class Control : MonoBehaviour
         resultScreen.gameObject.SetActive(true);
         resultScreen.eating.Play();
         resultScreen.CheckResult(ketchuped, mustarded, bunned);
+    }
+    public void Mustarded()
+    {
+        mustardEffect.SetActive(true);
+        mustarded = true;
+    }
+
+    public void Bunned()
+    {
+        bunFrontEffect.SetActive(true);
+        bunBackEffect.SetActive(true);
+        bunned = true;
     }
 }
