@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MicrowaveHandle : MonoBehaviour
+public class MicrowaveHandle : InteractableBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool hasFork = false;
+    
+    public override void Interact()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("Microwave Handle Turned!!!");
     }
 }

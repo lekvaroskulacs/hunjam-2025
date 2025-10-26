@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "hunjam-2025.sln"
+    "dotnet.defaultSolution": "Sausage adventure.sln"
 }
