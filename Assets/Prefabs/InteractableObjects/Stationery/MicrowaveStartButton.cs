@@ -15,6 +15,11 @@ public class MicrowaveStartButton : InteractableBase
     [SerializeField] GameObject _brokenMicro;
     [SerializeField] GameObject _micro;
 
+    // Optional: assign a Canvas that will be used for the white flash (should cover the screen).
+    // We'll simply enable/disable the Canvas component for the flash.
+    [SerializeField] private Canvas flashCanvas;
+    [SerializeField] private float flashDuration =0.5f;
+
     private bool _isPorpuseFulfilled;
 
     public override void Interact()
@@ -36,24 +41,12 @@ public class MicrowaveStartButton : InteractableBase
     {
         if (_isPorpuseFulfilled) return;
         base.Select();
-
-        //SpriteRenderer sprite = GetComponent<SpriteRenderer>();
-        //if (sprite != null)
-        //{
-        //    sprite.color = Color.red;
-        //}
     }
 
     public override void DeSelect()
     {
         if (_isPorpuseFulfilled) return;
         base.DeSelect();
-
-        //SpriteRenderer sprite = GetComponent<SpriteRenderer>();
-        //if (sprite != null)
-        //{
-        //    sprite.color = Color.black;
-        //}
     }
     IEnumerator StartMicrowave()
     {
@@ -80,7 +73,29 @@ public class MicrowaveStartButton : InteractableBase
         _brokenMicro.SetActive(true);
         _micro.SetActive(false);
 
+        // Start white flash effect using the assigned Canvas
+        if (flashCanvas != null)
+        {
+            StartCoroutine(FlashWhite());
+        }
+
         _isPorpuseFulfilled = true;
         Debug.Log("Boom! Microwave exploded due to fork inside!");
+    }
+
+    private IEnumerator FlashWhite()
+    {
+        if (flashCanvas == null) yield break;
+        Debug.Log(flashCanvas.name);
+        Debug.Log(flashCanvas.enabled);
+
+        // Enable the Canvas component (do not modify other params)
+        flashCanvas.enabled = true;
+
+        yield return new WaitForSeconds(flashDuration);
+
+        // Disable the Canvas component
+        flashCanvas.enabled = false;
+
     }
 }
