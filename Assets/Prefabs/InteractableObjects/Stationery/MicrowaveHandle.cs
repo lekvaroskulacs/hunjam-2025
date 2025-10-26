@@ -6,6 +6,8 @@ public class MicrowaveHandle : InteractableBase
 {
     public bool hasFork = false;
 
+    [SerializeField] GameObject WhiteMicroScreen;
+
     [SerializeField] GameObject _forkSpoon;
     
     public override void Interact()
@@ -16,7 +18,10 @@ public class MicrowaveHandle : InteractableBase
 
             _forkSpoon.GetComponent<InteractableBase>().Drop();
             Destroy(_forkSpoon);
+
+            WhiteMicroScreen.gameObject.SetActive(false);
         }
+        // Show nned for Spoon
 
         Debug.Log("Microwave Handle Turned!!!");
     }
