@@ -10,8 +10,17 @@ public class MicrowaveStartButton : InteractableBase
     [SerializeField] private AudioSource microwaveDoneSound;
     [SerializeField] private AudioSource microwaveExplosionSound;
     [SerializeField] private Mustard mustard;
+
+
+    [SerializeField] GameObject _brokenMicro;
+    [SerializeField] GameObject _micro;
+
+    private bool _isPorpuseFulfilled;
+
     public override void Interact()
     {
+        if (_isPorpuseFulfilled) return;
+
         Debug.Log("Micro Started!!!");
         if (microwaveHandle.hasFork)
         {
@@ -25,24 +34,26 @@ public class MicrowaveStartButton : InteractableBase
 
     public override void Select()
     {
+        if (_isPorpuseFulfilled) return;
         base.Select();
 
-        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
-        if (sprite != null)
-        {
-            sprite.color = Color.red;
-        }
+        //SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        //if (sprite != null)
+        //{
+        //    sprite.color = Color.red;
+        //}
     }
 
     public override void DeSelect()
     {
+        if (_isPorpuseFulfilled) return;
         base.DeSelect();
 
-        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
-        if (sprite != null)
-        {
-            sprite.color = Color.black;
-        }
+        //SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        //if (sprite != null)
+        //{
+        //    sprite.color = Color.black;
+        //}
     }
     IEnumerator StartMicrowave()
     {
@@ -65,6 +76,11 @@ public class MicrowaveStartButton : InteractableBase
         microwaveExplosionSound.Play();
         // trigger explosion effect here
         mustard.Explode();
+
+        _brokenMicro.SetActive(true);
+        _micro.SetActive(false);
+
+        _isPorpuseFulfilled = true;
         Debug.Log("Boom! Microwave exploded due to fork inside!");
     }
 }

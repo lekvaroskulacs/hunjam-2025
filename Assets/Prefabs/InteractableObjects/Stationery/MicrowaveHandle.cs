@@ -9,9 +9,12 @@ public class MicrowaveHandle : InteractableBase
     [SerializeField] GameObject WhiteMicroScreen;
 
     [SerializeField] GameObject _forkSpoon;
-    
+
+    private bool _isPorpuseFulfilled;
     public override void Interact()
     {
+        if (_isPorpuseFulfilled) return;
+
         if (Player.Instance.IsHoldingForkSpoon)
         {
             hasFork = true;
@@ -20,9 +23,35 @@ public class MicrowaveHandle : InteractableBase
             Destroy(_forkSpoon);
 
             WhiteMicroScreen.gameObject.SetActive(false);
+
+            _isPorpuseFulfilled = true;
         }
         // Show nned for Spoon
 
         Debug.Log("Microwave Handle Turned!!!");
+    }
+
+    public override void Select()
+    {
+        if (_isPorpuseFulfilled) return;
+        base.Select();
+
+        //SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        //if (sprite != null)
+        //{
+        //    sprite.color = Color.red;
+        //}
+    }
+
+    public override void DeSelect()
+    {
+        if (_isPorpuseFulfilled) return;
+        base.DeSelect();
+
+        //SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        //if (sprite != null)
+        //{
+        //    sprite.color = Color.black;
+        //}
     }
 }
