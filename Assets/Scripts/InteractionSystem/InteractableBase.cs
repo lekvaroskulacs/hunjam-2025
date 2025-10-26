@@ -22,8 +22,6 @@ public abstract class InteractableBase : MonoBehaviour
         {
             _promptBubble.SetActive(true);
         }
-
-        //Debug.Log("SSSSSSSSSSSSSSSSSSSSSSSSSSSSelect");
     }
 
     public virtual void DeSelect()
@@ -36,7 +34,6 @@ public abstract class InteractableBase : MonoBehaviour
         {
             _promptBubble.SetActive(false);
         }
-        //Debug.Log("DEEEEEEEEEEESelect");
     }
 
     public virtual void PickUp()
@@ -51,7 +48,7 @@ public abstract class InteractableBase : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
-            rb.isKinematic = true;
+            rb.bodyType = RigidbodyType2D.Kinematic;
         }
 
         _isBeingCarried = true;
@@ -71,7 +68,7 @@ public abstract class InteractableBase : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
-            rb.isKinematic = false;
+            rb.bodyType = RigidbodyType2D.Kinematic;
         }
 
         _isBeingCarried = false;
